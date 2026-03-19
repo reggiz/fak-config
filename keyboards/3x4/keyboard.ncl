@@ -1,7 +1,6 @@
 let { DirectPinKey, .. } = import "fak/keyboard.ncl" in
 let { CH552T, .. } = import "fak/mcus.ncl" in
-# Импортируем файл с раскладкой
-let keymap = import "fak/keymaps/default.ncl" in
+
 {
   mcu = CH552T,
   usb_dev = {
@@ -17,6 +16,5 @@ let keymap = import "fak/keymaps/default.ncl" in
         D 13, D 31, D 16,
         D 11, D 10, D 15,
     ]
- # Добавляем ссылку на импортированную раскладку
- keymap = keymap,
+
 }
